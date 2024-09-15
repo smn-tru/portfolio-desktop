@@ -1,0 +1,15 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.gradient-background {
+    background-image: radial-gradient(
+            74% 90% at 0% 0%,
+            #00fdd3 0%,
+            #00fdd344 57%,
+            #00fdd322 80%,
+            #00000000 100%
+        ),
+        radial-gradient(75% 75% at 100% 100%, #da29e7 0%, #00000000 100%),
+        linear-gradient(180deg, #008f6b 0%, #1f2b89 54%, #340072 100%);
+}
