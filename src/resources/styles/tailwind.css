@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: "DIN Alternate", sans-serif;
+    font-size: 18px;
+    background: url('../images/pexels-lastly-937782.jpg') no-repeat center center fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top: 50%;
+}
+
+.card-element {
+    border-color: rgb(245, 150, 116);
+    border-width: 0em;
+    border-radius: 25px;
+    background-color: rgb(245, 150, 116);
+    opacity: 50%;
+}
+
+.music-player-component {
+    text-align: center;
+    max-width: 600px;
+    margin-top: 10px;
+    color: aliceblue;
+    font-weight: bold;
+}
+  
+.musicCover {
+    border-radius: 10%;
+}
+  
+.playButton {
+    background: none;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  
+.subTitle {
+    margin-top: -1em;
+    color: #4f4f4f;
+}
+  
+.time {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    color: #828282;
+    font-size: smaller;
+}
+  
+.timeline {
+    width: 80%;
+    background-color: #27ae60;
+}
+  
+input[type="range"] {
+    background-color: #27ae60;
+}
+  
+@media (max-width: 900px) {
+    .component {
+      width: 50%;
+    }
+}
