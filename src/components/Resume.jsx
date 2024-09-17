@@ -3,7 +3,7 @@ import DesktopCard from "./common/DesktopCard";
 
 function Resume(){
     return(
-        <DesktopCard className='border border-3 border-warning bg-white d-flex flex-column'>
+        <div className='card-element d-flex flex-column'>
             <div>
                 <div className="position-relative">
                     <div className="gradient-background darkened px-1 pb-2 pt-3 d-flex align-items-center justify-content-around">
@@ -12,12 +12,12 @@ function Resume(){
                         </div>
                         
                         <div className="text-center flex-shrink-0">
-                            
+                            Resume
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="p-1 bg-white flex-grow-1 d-flex align-items-center justify-content-center">
+            <div className="p-1  flex-grow-1 d-flex align-items-center justify-content-center">
                 <div className="flex-grow-1 text-center">
                     
                     <div>
@@ -35,7 +35,7 @@ function Resume(){
                     </div>
                 </div>
             </div>
-        </DesktopCard>
+        </div>
     )
 }
 
