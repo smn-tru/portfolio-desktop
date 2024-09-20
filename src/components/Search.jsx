@@ -2,7 +2,7 @@ import React from "react";
 
 function Search(){
     return (
-        <div className='card-element d-flex flex-column'>
+        <div className='card-element-search d-flex flex-column'>
             <div className="">
                 <div className="position-relative">
                     <div className="px-1 pb-2 pt-3 d-flex align-items-center justify-content-around">

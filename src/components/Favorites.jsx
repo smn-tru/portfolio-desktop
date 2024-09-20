@@ -3,14 +3,13 @@ import React from "react";
 function Favorites(){
     return (
         <div className='card-element d-flex flex-column'>
-            <div className="">
-                <div className="position-relative">
-                    <div className="px-1 pb-2 pt-3 d-flex align-items-center justify-content-around">
-                        <div className="text-center flex-shrink-0">
-                            Favorites
-                        </div>
-                    </div>
-                </div>
+            <div className="grid grid-cols-3 grid-rows-2 gap-y-3 p-3 text-center">
+                <i className="fas fa-square fa-4x" />
+                <i className="fas fa-square fa-4x" />
+                <i className="fas fa-square fa-4x" />
+                <i className="fas fa-square fa-4x" />
+                <i className="fas fa-square fa-4x" />
+                <i className="fas fa-square fa-4x" />
             </div>
         </div>
     )

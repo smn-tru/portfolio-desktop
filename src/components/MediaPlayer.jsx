@@ -95,11 +95,9 @@ function MediaPlayer(){
         let newSong = {};
 
         if(currentSongIdx == 0){
-            //console.log(playlist[playlist.length -1])
             newSong = playlist[playlist.length -1];
         }
         else{
-            //console.log(playlist[currentSongIdx -1])
             newSong = playlist[currentSongIdx -1];
         }
         setCurrentSong(newSong);
@@ -121,7 +119,7 @@ function MediaPlayer(){
             min: "",
             sec: "",
         });
-    }
+    };
 
     const onSongChange = async (newSong) => {
         const playBtn = document.getElementById("btnPlay");

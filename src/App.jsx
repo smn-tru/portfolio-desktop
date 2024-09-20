@@ -17,21 +17,27 @@ function App() {
   return (
     <div className='container App'>
       <div className='row component-board'>
-        <div className="grid grid-cols-3 gap-4 sm:grid-cols-1 sm:gap-4 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-4">
-            <AboutMe />
-            <Calendar />
-            <Contact />
-            <MediaPlayer />
-            <Projects />
-            <div className="grid grid-cols-3 gap-2">
-              <Resume />
-              <Skills />
-              <WorkExperience />
-            </div>
+        <div className="grid grid-cols-7 gap-0 mb-2">
+          <div className="col-span-4">
             <Search />
-            <Notes />
-            <Weather />
-            <Favorites />
+          </div>
+          <div className="col-span-3">
+            <Contact /> 
+          </div>
+        </div>
+        <div className="grid grid-cols-3 gap-4 sm:grid-cols-1 sm:gap-4 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-4">
+          <AboutMe />
+          <MediaPlayer />
+          <Calendar />
+          <Projects />
+          <div className="grid grid-cols-3 gap-2">
+            <Resume />
+            <Skills />
+            <WorkExperience />
+          </div>
+          <Notes />
+          <Weather />
+          <Favorites />
         </div>
       </div>
     </div>
