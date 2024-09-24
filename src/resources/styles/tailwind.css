@@ -20,24 +20,21 @@ body {
     border-color: rgb(245, 150, 116);
     border-width: 0em;
     border-radius: 25px;
-    background-color: rgb(245, 150, 116);
-    opacity: 60%;
+    background-color: rgb(245, 150, 116, 0.6);
 }
 
 .card-element-contact {
     border-color: rgb(245, 150, 116);
     border-width: 0em;
     border-radius: 0px 40px 40px 0px;
-    background-color: rgb(245, 150, 116);
-    opacity: 60%;
+    background-color: rgb(245, 150, 116, 0.6);
 }
 
 .card-element-search {
     border-color: rgb(245, 150, 116);
     border-width: 0em;
     border-radius: 40px 0px 0px  40px;
-    background-color: rgb(245, 150, 116);
-    opacity: 60%;
+    background-color: rgb(245, 150, 116, 0.6);
 }
 
 .music-player-component {
