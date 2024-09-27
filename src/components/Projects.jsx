@@ -4,21 +4,17 @@ import DesktopCard from "./common/DesktopCard";
 function Projects(){
     const [projects, setProjects] = useState([]);
     return(
-        <div className='card-element d-flex flex-column'>
-            <div>
-                <div className="position-relative">
-                    <div className="px-1 pb-2 d-flex align-items-center justify-content-around">
-                        <div className="p-1 position-absolute end-0 top-0 text-end">
-                            <i className="fas fa-info-circle fs-4 text-light" data-bs-toggle="tooltip" title={``} />
-                        </div>
-                        
-                        <div className="grid grid-cols-3 text-center">
-                            <i className="fas fa-folder fa-3x"></i>
-                            <i className="fas fa-folder fa-3x"></i>
-                            <i className="fas fa-folder fa-3x"></i>
-                        </div>
-                    </div>
-                </div>
+        <div className='card-element p-3 d-flex flex-column'>
+            <div className="text-center align-items-center">
+                <img src="https://placehold.co/600x400" />
+            </div>
+            <div className="text-center mt-3">
+                <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
+                    Prev
+                </button>
+                <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">
+                    Next
+                </button>
             </div>
         </div>
     )

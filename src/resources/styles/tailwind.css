@@ -6,7 +6,7 @@
 body {
     font-family: "DIN Alternate", sans-serif;
     font-size: 18px;
-    background: url('../images/pexels-lastly-937782.jpg') no-repeat center center fixed;
+    background: url('../images/pexels-mdsnmdsnmdsn-1831234.jpg') no-repeat center center fixed;
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -17,24 +17,37 @@ body {
 }
 
 .card-element {
-    border-color: rgb(245, 150, 116);
+    border-color: rgb(253, 185, 160);
     border-width: 0em;
     border-radius: 25px;
-    background-color: rgb(245, 150, 116, 0.6);
+    background-color: rgba(153, 136, 153, 0.356);
 }
 
 .card-element-contact {
-    border-color: rgb(245, 150, 116);
+    border-color: rgb(253, 185, 160);
     border-width: 0em;
-    border-radius: 0px 40px 40px 0px;
-    background-color: rgb(245, 150, 116, 0.6);
+    background-color: rgb(153, 136, 153, 0.356);
 }
 
 .card-element-search {
-    border-color: rgb(245, 150, 116);
+    border-color: rgb(253, 185, 160);
     border-width: 0em;
     border-radius: 40px 0px 0px  40px;
-    background-color: rgb(245, 150, 116, 0.6);
+    background-color: rgb(153, 136, 153, 0.356);
+}
+
+.card-element-clock {
+    border-color: rgb(253, 185, 160);
+    border-width: 0em;
+    border-radius: 0px 40px 40px 0px;
+    background-color: rgb(153, 136, 153, 0.356);
+}
+
+.card-element-notes {
+    border-color: rgb(253, 185, 160);
+    border-width: 0em;
+    border-radius: 25px;
+    background-color: rgba(153, 136, 153, 0.356);
 }
 
 .music-player-component {
@@ -104,4 +117,10 @@ input[type="range"] {
 .weather-description {
     align-self: center;
     justify-self: start;
+}
+
+.profile-pic {
+    height: 300px;
+    width: 300px;
+    border-radius: 10%;
 }
