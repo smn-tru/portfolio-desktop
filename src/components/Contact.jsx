@@ -64,7 +64,7 @@ function Contact(){
         <div className='card-element-contact d-flex flex-column'>
                 <div className="">
                     <div className="col-span-12 p-3 text-center">
-                        <ul className="grid grid-cols-10">
+                        <ul className="grid grid-cols-7">
                             <li className="nav-item">
                                 <a href='#' 
                                 id="messageForm" 

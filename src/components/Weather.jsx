@@ -61,44 +61,44 @@ function Weather(){
     return (
         <div className='card-element d-flex flex-column p-3 prose'>
             <div className={`rounded-2xl ${timeOfDay == 'd' ? 'bg-sky-400' : 'bg-sky-950'} opacity-90`}>
-                <div className="p-3 grid grid-cols-5">
+                <div className="p-3 grid grid-cols-4">
                     <input 
                         type="text"
                         placeholder="Enter city name"
                         value={city}
                         onChange={handleInputChange}  
                         id="small-input" 
-                        className="col-span-3 block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                        className="col-span-3 block p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                     />
-                    <button type="submit" onClick={handleSubmit} className="text-white col-span-1 bg-indigo-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm ms-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <button type="submit" onClick={handleSubmit} className="bg-opacity-70 hover:bg-opacity-50 text-white col-span-1 bg-indigo-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm ms-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         <i className="fas fa-magnifying-glass" />
                     </button>
-                    <div className="flex col-span-1 ms-3">
-                        <label className='themeSwitcherThree relative inline-flex cursor-pointer select-none items-center'>
-                            <input
-                            type='checkbox'
-                            checked={isChecked}
-                            onChange={handleCheckboxChange}
-                            className='sr-only'
-                            />
-                            <div className='shadow-card flex h-[46px] w-[82px] items-center justify-center rounded-md bg-white'>
-                            <span
-                                className={`flex h-9 w-9 items-center justify-center rounded ${
-                                !isChecked ? 'bg-indigo-700 text-white' : 'text-body-color'
-                                }`}
-                            >
-                                °C
-                            </span>
-                            <span
-                                className={`flex h-9 w-9 items-center justify-center rounded ${
-                                isChecked ? 'bg-indigo-700 text-white' : 'text-body-color'
-                                }`}
-                            >
-                                °F
-                            </span>
-                            </div>
-                        </label>
-                    </div>
+                </div>
+                <div className="col text-end me-3">
+                    <label className='themeSwitcherThree relative inline-flex cursor-pointer select-none items-center'>
+                        <input
+                        type='checkbox'
+                        checked={isChecked}
+                        onChange={handleCheckboxChange}
+                        className='sr-only'
+                        />
+                        <div className='bg-opacity-70 hover:bg-opacity-50 shadow-card flex h-[35px] w-[82px] items-center justify-center rounded-md bg-white'>
+                        <span
+                            className={`flex h-6 w-9 items-center justify-center rounded ${
+                            !isChecked ? 'bg-indigo-700 text-white' : 'text-body-color'
+                            }`}
+                        >
+                            °C
+                        </span>
+                        <span
+                            className={`flex h-6 w-9 items-center justify-center rounded ${
+                            isChecked ? 'bg-indigo-700 text-white' : 'text-body-color'
+                            }`}
+                        >
+                            °F
+                        </span>
+                        </div>
+                    </label>
                 </div>
                 {weatherData ? (
                     <div className="grid grid-rows-2 pt-3 ps-3 pe-3">

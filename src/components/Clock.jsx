@@ -13,7 +13,7 @@ function Clock(){
     setInterval(UpdateTime)
 
     return (
-        <div className='card-element-clock p-3 d-flex flex-column text-white'>
+        <div className='card-element-clock p-3 d-flex flex-column text-white text-end'>
             <span className="weather-description weather-header">{ctime}</span>
         </div>
     )

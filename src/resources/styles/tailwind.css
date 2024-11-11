@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    margin-top: 50%;
+    margin-top: 10%;
 }
 
 .card-element {
@@ -102,7 +102,7 @@ input[type="range"] {
 
 .temperature {
     display: inline-block;
-    font-size: 150px;
+    font-size: 125px;
     line-height: 90px;
     height: 35px;
     font-weight: lighter;
@@ -120,7 +120,22 @@ input[type="range"] {
 }
 
 .profile-pic {
-    height: 300px;
-    width: 300px;
+    height: 265px;
+    width: 265px;
     border-radius: 10%;
+}
+
+.profile-pic-container {
+    display: flex;
+    align-items: center !important;
+    height: 100% !important;
+    justify-content: center !important;
+}
+
+.resume-btn-container {
+    align-self: end;
+}
+
+.carousel-btn {
+    padding-bottom: 50px !important;
 }
