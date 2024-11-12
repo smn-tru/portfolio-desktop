@@ -43,7 +43,7 @@ body {
     background-color: rgb(153, 136, 153, 0.356);
 }
 
-.card-element-notes {
+.card-element-bio {
     border-color: rgb(253, 185, 160);
     border-width: 0em;
     border-radius: 25px;
@@ -138,4 +138,8 @@ input[type="range"] {
 
 .carousel-btn {
     padding-bottom: 50px !important;
+}
+
+.nav-item:hover {
+    transform: scale(1.2);
 }

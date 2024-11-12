@@ -160,8 +160,8 @@ function MediaPlayer(){
                 />
             </div>
             <div className="music-player-component col-span-2">
-                <div>
-                    <h2 className="title mb-4">{currentSong.Title} - {currentSong.Artist}</h2>
+                <div className="mb-4">
+                    <span className="title font-bold text-sm">{currentSong.Title} - {currentSong.Artist}</span>
                 </div>
                 <div>
                     <button className="playButton" onClick={onPreviousClick}>
@@ -199,7 +199,7 @@ function MediaPlayer(){
                         sound.seek([e.target.value]);
                     }}
                 />
-                <div className="time">
+                <div className="time p-2">
                     <p>
                         {currTime.min}:{currTime.sec}
                     </p>

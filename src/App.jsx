@@ -7,7 +7,7 @@ import MediaPlayer from './components/MediaPlayer';
 import Skills from './components/Skills';
 import Search from './components/Search';
 import Weather from './components/Weather';
-import Favorites from './components/Favorites';
+import ContactForm from './components/ContactForm';
 import Clock from './components/Clock';
 import AboutMe from './components/AboutMe';
 
@@ -45,7 +45,7 @@ function App() {
                             </div>
                         </div>
                         <div className='col-span-2'>
-                            <Favorites />
+                            <ContactForm />
                         </div>
                     </div>
                     <div className="grid col-span-1">
