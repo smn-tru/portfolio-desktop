@@ -5,7 +5,6 @@ import Calendar from './components/Calendar';
 import Contact from './components/Contact';
 import MediaPlayer from './components/MediaPlayer';
 import Skills from './components/Skills';
-import Search from './components/Search';
 import Weather from './components/Weather';
 import ContactForm from './components/ContactForm';
 import Clock from './components/Clock';
@@ -16,13 +15,10 @@ function App() {
         <div className='container App'>
             <div className='row component-board'>
                 <div className="grid grid-cols-7 gap-0 mb-2">
-                    <div className="col-span-3">
-                        <Search />
-                    </div>
-                    <div className="col-span-2">
+                    <div className="col-span-4">
                         <Contact /> 
                     </div>
-                    <div className="col-span-2">
+                    <div className="col-span-3">
                         <Clock />
                     </div>
                 </div>

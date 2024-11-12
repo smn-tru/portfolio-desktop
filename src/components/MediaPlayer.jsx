@@ -6,23 +6,38 @@ import { IconContext } from "react-icons"; // for customazing the icons
 import BTS_SpringDay from '../resources/assets/BTS_SpringDay.mp3';
 import SpiritedAway_TheNameOfLife from '../resources/assets/SpiritedAway_TheNameOfLife.mp3';
 import Blackpink_Stay from '../resources/assets/Blackpink_Stay.mp3';
+import JVKE_GoldenHour from '../resources/assets/JVKE_GoldenHour.mp3';
+
+import BTS_SpringDay_AC from '../resources/images/BTS_SpringDay_AC.jpeg';
+import SpiritedAway_AC from '../resources/images/SpiritedAway_AC.jpeg';
+import Blackpink_Stay_AC from '../resources/images/Blackpink_Stay_AC.jpeg';
+import JVKE_GoldenHour_AC from '../resources/images/JVKE_GoldenHour_AC.jpeg';
 
 function MediaPlayer(){
     const playlist = [
         {
             Artist: "BTS",
             Title: "Spring Day",
-            Path: BTS_SpringDay
+            Path: BTS_SpringDay,
+            AlbumCover: BTS_SpringDay_AC
         },
         {
             Artist: "Ayaka Hirahara",
             Title: "The Name of Life",
-            Path: SpiritedAway_TheNameOfLife
+            Path: SpiritedAway_TheNameOfLife,
+            AlbumCover: SpiritedAway_AC
         },
         {
             Artist: "Blackpink",
             Title: "Stay",
-            Path: Blackpink_Stay
+            Path: Blackpink_Stay,
+            AlbumCover: Blackpink_Stay_AC
+        },
+        {
+            Artist: "JVKE",
+            Title: "Golden Hour",
+            Path: JVKE_GoldenHour,
+            AlbumCover: JVKE_GoldenHour_AC
         }
     ];
 
@@ -142,9 +157,6 @@ function MediaPlayer(){
             newSong = playlist[currentSongIdx +1];
 
         setCurrentSong(newSong);
-        
-        const mpEl = document.getElementById("album-cover").innerHTML;
-        document.getElementById("album-cover").innerHTML = mpEl;
 
         setTimeout(async() => {
             await onSongChange(newSong);
@@ -153,13 +165,13 @@ function MediaPlayer(){
 
     return(
         <div id="musicPlayer" className='card-element grid grid-cols-3 gap-0 d-flex flex-column'>
-            <div id="album-cover" className="album-cover align-self-center justify-self-center">
+            <div id="album-cover" className="album-cover">
                 <img
                     className="musicCover p-2 ms-1"
-                    src="https://picsum.photos/150/150"
+                    src={currentSong.AlbumCover}
                 />
             </div>
-            <div className="music-player-component col-span-2">
+            <div className="music-player-component col-span-2 mb-1">
                 <div className="mb-4">
                     <span className="title font-bold text-sm">{currentSong.Title} - {currentSong.Artist}</span>
                 </div>
@@ -199,7 +211,7 @@ function MediaPlayer(){
                         sound.seek([e.target.value]);
                     }}
                 />
-                <div className="time p-2">
+                <div className="time pb-2">
                     <p>
                         {currTime.min}:{currTime.sec}
                     </p>

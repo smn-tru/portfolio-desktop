@@ -5,11 +5,9 @@
 
 body {
     font-family: "DIN Alternate", sans-serif;
-    font-size: 18px;
-    background: url('../images/pexels-mdsnmdsnmdsn-1831234.jpg') no-repeat center center fixed;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
+    font-size: 16px;
+    background: rgb(2,0,36);
+    background: linear-gradient(117deg, rgba(2,0,36,1) 0%, rgba(113,15,167,1) 47%, rgba(16,130,154,1) 66%);
 }
 
 .container {
@@ -27,6 +25,7 @@ body {
     border-color: rgb(253, 185, 160);
     border-width: 0em;
     background-color: rgb(153, 136, 153, 0.356);
+    border-radius: 40px 0px 0px  40px;
 }
 
 .card-element-search {
@@ -56,6 +55,11 @@ body {
     margin-top: 10px;
     color: aliceblue;
     font-weight: bold;
+}
+
+.album-cover {
+    justify-self: center;
+    align-self: center;
 }
   
 .musicCover {
@@ -142,4 +146,13 @@ input[type="range"] {
 
 .nav-item:hover {
     transform: scale(1.2);
+}
+
+.copy-to-clipboard:hover {
+    color: rgb(224, 101, 224);
+}
+
+.clock {
+    font-size: 23px;
+    font-weight: bold;
 }

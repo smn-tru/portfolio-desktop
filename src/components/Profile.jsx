@@ -15,11 +15,11 @@ function Profile(){
                 <div className="grid grid-rows-2 gap-3">
                     <div className="text-xs">
                         <p className="font-bold">Name:</p>
-                        <p className="text-center italic mb-1">Sandra Truong</p>
+                        <p className="text-center italic mb-2">Sandra Truong</p>
                         <p className="font-bold">Title:</p>
-                        <p className="text-center italic mb-1">Full-Stack Software Developer</p>
+                        <p className="text-center italic mb-2">Full-Stack Software Developer</p>
                         <p className="font-bold">Location:</p>
-                        <p className="text-center italic mb-1">Denver, CO USA</p>
+                        <p className="text-center italic mb-2">Denver, CO USA</p>
                     </div>
                     <div className="resume-btn-container">
                         <p className="font-bold text-xs mb-1">Resume:</p>
