@@ -106,8 +106,8 @@ function Weather(){
                             <img className="col-span-1 m-0" src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} />
                             <span className="col-span-3 text-white weather-description">{weatherData.weather[0].description}</span>
                         </div>
-                        <div className="grid grid-cols-2 text-center">
-                            <div className="">
+                        <div className="grid lg:grid-cols-2 text-center">
+                            <div className="align-self-center">
                                 <span className="text-white temperature">{Math.floor(temperature)}°</span>
                             </div>
                             <div className="p-0 grid grid-cols-2 grid-rows-5 text-white">
@@ -117,7 +117,7 @@ function Weather(){
                                 <div className="text-end content-end">{weatherData.main.humidity}%</div>
                                 <div className="text-start content-end">Pressure</div> 
                                 <div className="text-end content-end">{weatherData.main.pressure}</div>
-                                <div className="text-start content-end">Wind Speed</div> 
+                                <div className="text-start content-end">Wind</div> 
                                 <div className="text-end content-end">{weatherData.wind.speed}m/s</div>
                             </div>
                         </div>

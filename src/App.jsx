@@ -12,19 +12,19 @@ import AboutMe from './components/AboutMe';
 
 function App() {
     return (
-        <div className='container App'>
+        <div className='container App p-2'>
             <div className='row component-board'>
-                <div className="grid grid-cols-7 gap-0 mb-2">
-                    <div className="col-span-4">
+                <div className="grid sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-7 gap-0 mb-2">
+                    <div className="sm:col-span-1 md:col-span-3 lg:col-span-4">
                         <Contact /> 
                     </div>
-                    <div className="col-span-3">
+                    <div className="hidden md:block md:col-span-1 lg:block lg:col-span-3">
                         <Clock />
                     </div>
                 </div>
-                <div className="grid grid-cols-3 gap-4 sm:grid-cols-1 sm:gap-4 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-4">
-                    <div className='grid grid-rows-2 col-span-2 gap-4'>
-                        <div className="col-span-1">
+                <div className="grid sm:grid-cols-1 sm:gap-4 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-4">
+                    <div className='lg:grid grid-rows-2 col-span-2 gap-4'>
+                        <div className="col-span-1 mt-2 lg:mt-0">
                             <div className='row-span-2 mb-2'>
                                 <Profile />
                             </div>
@@ -32,19 +32,19 @@ function App() {
                                 <AboutMe />
                             </div>
                         </div>
-                        <div className="col-span-1">
-                            <div className='row-span-1 mb-2'>
+                        <div className="col-span-1 mt-2 lg:mt-0">
+                            <div className='hidden lg:block row-span-1 mb-2'>
                                 <MediaPlayer />
                             </div>
                             <div className='row-span-2'>
                                 <Skills />
                             </div>
                         </div>
-                        <div className='col-span-2'>
+                        <div className='col-span-2 mt-2 lg:mt-0'>
                             <ContactForm />
                         </div>
                     </div>
-                    <div className="grid col-span-1">
+                    <div className="hidden lg:block grid col-span-1">
                         <div className="col-span-1">
                             <div className='row-span-1 mb-2'>
                                 <Calendar />

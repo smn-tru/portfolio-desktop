@@ -23,7 +23,7 @@ function Contact(){
 
     return(
         <div className='card-element-contact d-flex flex-column'>
-            <div className="grid grid-cols-2">
+            <div className="grid md:grid-cols-2 lg:grid-cols-2">
                 <div className="col-span-1 p-3 text-center">
                     <ul className="grid grid-cols-5">
                         <li className="nav-item">

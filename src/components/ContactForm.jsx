@@ -37,7 +37,7 @@ function ContactForm(){
                 window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
             }, 2500)    
           }, (error) => {
-              console.log(error.text);
+              console.error(error.text);
               swal.fire({
                 icon: 'error',
                 title: 'Oops...',
@@ -61,8 +61,8 @@ function ContactForm(){
 
     return (
         <div className='card-element d-flex flex-column'>
-            <form className="p-3 grid grid-cols-3 gap-2 emailForm" onSubmit={sendEmail}>
-                <div className="col-span-1">
+            <form className="p-3 lg:grid lg:grid-cols-3 gap-2 emailForm" onSubmit={sendEmail}>
+                <div className="col-span-1 mb-3">
                     <input 
                         required 
                         type='text' 
@@ -71,7 +71,7 @@ function ContactForm(){
                         placeholder='Name' 
                         onChange={changeHandler} 
                         value={formData.name} 
-                        className="mb-1 w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 text-sm outline-blue-500" 
+                        className="mb-3 w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 text-sm outline-blue-500" 
                     />
                     <input 
                         required 
@@ -79,7 +79,7 @@ function ContactForm(){
                         id="emailField" 
                         name="email" 
                         value={formData.email} 
-                        className="mb-1 w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 text-sm outline-blue-500" 
+                        className="mb-3 w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 text-sm outline-blue-500" 
                         placeholder="Email" 
                         onChange={changeHandler}
                     />
@@ -102,7 +102,7 @@ function ContactForm(){
                         name="message" 
                         value={formData.message} 
                         className="md-textarea w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 text-sm outline-blue-500" 
-                        rows="6" 
+                        rows="7" 
                         placeholder="Message" 
                         onChange={changeHandler}
                     />
