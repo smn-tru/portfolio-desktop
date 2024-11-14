@@ -9,7 +9,7 @@ export default defineConfig({
     alias: {'@' : '/src' },
   },
   plugins: [
-    reactRefresh(),
+    //reactRefresh(),
     react()
   ],
   base: "/portfolio-desktop/"

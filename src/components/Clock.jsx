@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function Clock(){
-    let time  = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    const [ctime, setTime] = useState();
 
-    const [ctime, setTime] = useState(time);
+    let time  = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    
+    useEffect(() => {
+        setTime(time);
+    }, []);
 
     const UpdateTime=()=>{
         time =  new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
