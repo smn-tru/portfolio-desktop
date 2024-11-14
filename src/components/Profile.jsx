@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import profilePic from "../resources/images/profile-picture.jpeg"
-import Resume from "./Resume";
+const Resume = React.lazy(() => import('./Resume'));
 
 function Profile(){
     const [showResume, setShowResume] = useState(false);

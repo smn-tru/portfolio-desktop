@@ -1,14 +1,14 @@
 import React from 'react';
 
-import Profile from './components/Profile';
-import Calendar from './components/Calendar';
-import Contact from './components/Contact';
-import MediaPlayer from './components/MediaPlayer';
-import Skills from './components/Skills';
-import Weather from './components/Weather';
-import ContactForm from './components/ContactForm';
-import Clock from './components/Clock';
-import AboutMe from './components/AboutMe';
+const Profile = React.lazy(() => import('./components/Profile'));
+const Calendar = React.lazy(() => import('./components/Calendar'));
+const Contact = React.lazy(() => import('./components/Contact'));
+const MediaPlayer = React.lazy(() => import('./components/MediaPlayer'));
+const Skills = React.lazy(() => import('./components/Skills'));
+const Weather = React.lazy(() => import('./components/Weather'));
+const ContactForm = React.lazy(() => import('./components/ContactForm'));
+const Clock = React.lazy(() => import('./components/Clock'));
+const AboutMe = React.lazy(() => import('./components/AboutMe'));
 
 function App() {
     return (

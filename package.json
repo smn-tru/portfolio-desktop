@@ -4,12 +4,16 @@
   "private": true,
   "main": "src/main.jsx",
   "author": "Sandra Truong",
+  "homepage": "https://smn-tru.github.io/portfolio-desktop/",
+  "type": "commonjs",
   "scripts": {
     "build": "vite build",
     "dev": "vite",
     "inline": "INLINE=true vite build",
     "preview": "vite preview",
-    "start": "vite"
+    "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
@@ -54,9 +58,10 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.15",
-    "@vitejs/plugin-react": "^4.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
     "@vitejs/plugin-react-refresh": "^1.3.1",
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.2.0",
     "postcss": "^8.4.45",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6",
@@ -64,6 +69,7 @@
     "tailwindcss": "^3.4.3",
     "use-sound": "^4.0.3",
     "vite": "^5.4.5",
+    "vite-plugin-chunk-split": "^0.5.0",
     "vite-plugin-static-copy": "^2.1.0"
   }
 }
